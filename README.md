@@ -20,16 +20,8 @@ Scenarios are written in Gherkin and linked to Java step definitions for executi
 - Page Object Model (POM)
 - GitHub
 
-## 📁 Project Structure
-CucumberFramework/
-├── src/test/java/
-│ ├── stepDefinitions/ # Step definition classes
-│ ├── runners/ # Cucumber Test Runner classes
-│ └── pages/ # Page Object classes
-├── src/test/resources/
-│ └── features/ # .feature files (Gherkin scenarios)
-├── pom.xml # Project dependencies
-└── README.md
+📁 Project Structure
+<pre> CucumberFramework/ ├── src/ │ └── test/ │ ├── java/ │ │ ├── stepDefinitions/ # Step definitions (glue code) │ │ ├── runners/ # Cucumber TestRunner classes │ │ └── pages/ # Page Object classes │ └── resources/ │ └── features/ # .feature files (Gherkin) ├── pom.xml # Project dependencies └── README.md # Project documentation </pre>
 
 
 ## ✅ How to Run Tests
