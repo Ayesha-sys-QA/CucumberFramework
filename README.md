@@ -21,17 +21,22 @@ Scenarios are written in Gherkin and linked to Java step definitions for executi
 - GitHub
 
 📁 Project Structure
+### 📁 Project Structure
+
+```
 CucumberFramework/
 ├── src/
-│ └── test/
-│ ├── java/
-│ │ ├── stepDefinitions/ # Step definitions (glue code)
-│ │ ├── runners/ # Cucumber TestRunner classes
-│ │ └── pages/ # Page Object classes
-│ └── resources/
-│ └── features/ # .feature files (Gherkin)
-├── pom.xml # Project dependencies
-└── README.md # Project documentation
+│   └── test/
+│       ├── java/
+│       │   ├── stepDefinitions/     # Step definitions (glue code)
+│       │   ├── runners/             # Cucumber TestRunner classes
+│       │   └── pages/               # Page Object classes
+│       └── resources/
+│           └── features/            # .feature files (Gherkin)
+├── pom.xml                          # Project dependencies
+└── README.md                        # Project documentation
+```
+
 
 ## ✅ How to Run Tests
 
