@@ -50,4 +50,8 @@ Feature: Login Functionality
     And clicks the login button
     Then User should be redirected to the dashboard
 
+## 📊 Reports
+
+Test execution reports can be generated using TestNG or other plugins (extent reports, Allure, etc.).
+
 
