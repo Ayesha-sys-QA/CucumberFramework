@@ -1,4 +1,4 @@
-# 🥒 CucumberFramework – BDD Automation Framework
+# CucumberFramework – BDD Automation Framework
 
 This is a Java-based test automation framework using **Cucumber**, **Selenium**, and **TestNG** following the principles of **Behavior-Driven Development (BDD)**.
 
