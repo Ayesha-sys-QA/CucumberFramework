@@ -78,4 +78,4 @@ Senior QA Automation Engineer | [LinkedIn](https://linkedin.com/in/aicha-moustat
 
 ---
 
-*Available for remote QA roles – open to Swiss relocation 2026.*
+*Available for remote QA roles – open to Swiss based projects 2026.*
