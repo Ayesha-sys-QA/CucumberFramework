@@ -1,63 +1,81 @@
-# CucumberFramework
-BDD Automation Framework using Cucumber, Selenium, Java, and TestNG
+# 🥒 CucumberFramework – BDD Automation Framework
 
+This is a Java-based test automation framework using **Cucumber**, **Selenium**, and **TestNG** following the principles of **Behavior-Driven Development (BDD)**.
 
-This project is a Behavior-Driven Development (BDD) test automation framework using **Cucumber**, **Selenium WebDriver**, **Java**, and **TestNG**.  
-It follows the Page Object Model (POM) design pattern and is integrated with Maven for build management.
+---
 
-## 🧪 Purpose
+## 🔧 Tech Stack
 
-The goal is to demonstrate how BDD can be used to write readable, maintainable, and scalable automated test scripts for web applications.  
-Scenarios are written in Gherkin and linked to Java step definitions for execution.
-
-## 🚀 Tools & Technologies
-
-- Java 11+
-- Cucumber (BDD Framework)
+- Java
 - Selenium WebDriver
 - TestNG
+- Cucumber (Gherkin syntax)
 - Maven
+- Git & GitHub
 - Page Object Model (POM)
-- GitHub
 
-📁 Project Structure
-### 📁 Project Structure
+---
+
+## 📂 Project Structure
 
 ```
-CucumberFramework/
-├── src/
-│   └── test/
-│       ├── java/
-│       │   ├── stepDefinitions/     # Step definitions (glue code)
-│       │   ├── runners/             # Cucumber TestRunner classes
-│       │   └── pages/               # Page Object classes
-│       └── resources/
-│           └── features/            # .feature files (Gherkin)
-├── pom.xml                          # Project dependencies
-└── README.md                        # Project documentation
+src
+ └── test
+     ├── java
+     │   ├── stepDefinitions/
+     │   ├── pageObjects/
+     │   └── testRunners/
+     └── resources
+         └── features/
 ```
 
+---
 
-## ✅ How to Run Tests
-
-1. Clone the repository.
-2. Open the project in IntelliJ or Eclipse.
-3. Run the `TestRunner.java` class from the `runners` package.
-4. Results will be shown in the console and/or reports directory.
-
-## 📌 Example Scenario
+## 🧪 Sample Feature
 
 ```gherkin
-Feature: Login Functionality
+Feature: User Login
 
   Scenario: Successful login with valid credentials
-    Given User is on the login page
-    When User enters valid username and password
-    And clicks the login button
-    Then User should be redirected to the dashboard
+    Given the user is on the login page
+    When the user enters valid username and password
+    Then the user should be redirected to the dashboard
+```
 
-## 📊 Reports
+---
 
-Test execution reports can be generated using TestNG or other plugins (extent reports, Allure, etc.).
+## ✅ How to Run
 
+1. Clone the repo:
+```bash
+git clone https://github.com/Ayesha-sys-QA/CucumberFramework.git
+```
 
+2. Navigate to the project:
+```bash
+cd CucumberFramework
+```
+
+3. Run tests via Maven:
+```bash
+mvn clean test
+```
+
+---
+
+## 📌 Notes
+
+- Supports both UI and API testing integrations
+- Can be expanded with data-driven testing and reporting plugins (Allure, Extent)
+- Designed to scale in Agile sprint cycles
+
+---
+
+## 👩‍💻 Author
+
+**Aicha Moustatia**  
+Senior QA Automation Engineer | [LinkedIn](https://linkedin.com/in/aicha-moustatia-qa)
+
+---
+
+*Available for remote QA roles – open to Swiss relocation 2026.*
