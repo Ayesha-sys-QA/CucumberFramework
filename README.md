@@ -31,17 +31,16 @@ CucumberFramework/
 
 ## 🛠 Technologies Used
 
-- Java 17
+- Java
 - Selenium WebDriver
 - Cucumber BDD
-- TestNG
 - Maven
 - Git & GitHub
 - Eclipse IDE
 
-## ▶️ How to Run
+## ▶️ How to Run the Tests
 
-Make sure Maven and Java are installed. Then in terminal:
+From terminal (make sure Maven is installed):
 
 ```bash
 mvn test
@@ -70,8 +69,8 @@ Chrome WebDriver in system PATH
 
 Eclipse or IntelliJ
 
-👤 Author
-Aicha Moustatia
-QA Automation Engineer | GitHub: Ayesha-sys-QA
+## 👩‍💻 Author
 
-*Available for remote QA roles – open to Swiss based projects.*
+**Aicha Moustatia**  
+QA Automation | GitHub: [Ayesha-sys-QA](https://github.com/Ayesha-sys-QA)
+
