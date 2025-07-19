@@ -1,55 +1,53 @@
-# CucumberFramework – BDD Automation Framework
+# 🧪 CucumberFramework – OrangeHRM Automation
 
-This is a Java-based test automation framework using **Cucumber**, **Selenium**, and **TestNG** following the principles of **Behavior-Driven Development (BDD)**.
+This project automates test scenarios on the OrangeHRM demo site using Java, Selenium, TestNG, Maven, and Cucumber (BDD).
 
----
+## ✅ Features Implemented
 
-## 🔧 Tech Stack
-
-- Java
-- Selenium WebDriver
-- TestNG
-- Cucumber (Gherkin syntax)
-- Maven
-- Git & GitHub
-- Page Object Model (POM)
-
----
+- 🔐 Login with valid credentials
+- 👤 Add Employee with and without employee ID
+- 🔍 Search Employee
+- 🔎 Google Search sample (basic)
 
 ## 📂 Project Structure
 
-```
-src
- └── test
-     ├── java
-     │   ├── stepDefinitions/
-     │   ├── pageObjects/
-     │   └── testRunners/
-     └── resources
-         └── features/
-```
 
----
-
-## 🧪 Sample Feature
-
-```gherkin
-Feature: User Login
-
-  Scenario: Successful login with valid credentials
-    Given the user is on the login page
-    When the user enters valid username and password
-    Then the user should be redirected to the dashboard
+CucumberFramework/
+│
+├── src/test/java
+│ ├── com.test.pages # Page Object Model classes
+│ ├── com.test.steps # Step Definitions
+│ ├── com.test.runners # TestNG and Cucumber Runners
+│ ├── com.test.utils # Utility classes (Browser utils, Configs, etc.)
+│ └── com.test.testbase # Base classes (setup & teardown)
+│
+├── src/test/resources
+│ └── features # Gherkin Feature files
+│
+├── pom.xml # Maven dependencies
+└── README.md # Project documentation
 ```
 
----
 
-## ✅ How to Run
+## 🛠 Technologies Used
 
-1. Clone the repo:
+- Java 17
+- Selenium WebDriver
+- Cucumber BDD
+- TestNG
+- Maven
+- Git & GitHub
+- Eclipse IDE
+
+## ▶️ How to Run
+
+Make sure Maven and Java are installed. Then in terminal:
+
 ```bash
-git clone https://github.com/Ayesha-sys-QA/CucumberFramework.git
-```
+mvn test
+Or from Eclipse:
+Right-click the test runner → Run As → TestNG Test or JUnit Test
+
 
 2. Navigate to the project:
 ```bash
@@ -63,19 +61,17 @@ mvn clean test
 
 ---
 
-## 📌 Notes
+⚙️ Prerequisites
+Java 11+ installed
 
-- Supports both UI and API testing integrations
-- Can be expanded with data-driven testing and reporting plugins (Allure, Extent)
-- Designed to scale in Agile sprint cycles
+Maven installed
 
----
+Chrome WebDriver in system PATH
 
-## 👩‍💻 Author
+Eclipse or IntelliJ
 
-**Aicha Moustatia**  
-Senior QA Automation Engineer | [LinkedIn](https://linkedin.com/in/aicha-moustatia-qa)
+👤 Author
+Aicha Moustatia
+QA Automation Engineer | GitHub: Ayesha-sys-QA
 
----
-
-*Available for remote QA roles – open to Swiss based projects 2026.*
+*Available for remote QA roles – open to Swiss based projects.*
