@@ -7,22 +7,16 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.test.testbase.BaseClass;
 
-public class PersonalDetailsPageElements {
+public class EmployeeListPageElements {
 
-	
-	@FindBy(id = "firstName")
-	public WebElement firstName;
-	
-	@FindBy(id = "employeeId")
-	public WebElement employeeId;
-	
-	
-	
-	
-	public PersonalDetailsPageElements()
-	{
+	@FindBy(id = "employee_name_quick_filter_employee_list_value")
+	public WebElement searchBox;
+
+	@FindBy(id = "quick_search_icon")
+	public WebElement searchIcon;
+
+	public EmployeeListPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
-	
-	
 }
+

@@ -1,10 +1,11 @@
 package com.test.pages;
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.neotech.utils.CommonMethods;
-import com.neotech.utils.ConfigsReader;
+import com.test.utils.CommonMethods;
+import com.test.utils.ConfigsReader;
 
 public class LoginPageElements extends CommonMethods {
 	
@@ -22,7 +23,7 @@ public class LoginPageElements extends CommonMethods {
 	
 	
 	@FindBy(css = "div.toast-message")
-	public WebElement toastMessage;
+	public WebElement invalidPassword;
 	
 	@FindBy(id = "txtPassword-error")
 	public WebElement passwordEmptyError;

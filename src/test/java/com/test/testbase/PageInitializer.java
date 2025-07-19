@@ -1,10 +1,16 @@
-package com.test.pages;
+package com.test.testbase;
 
-import com.neotech.testbase.BaseClass;
+
+
+import com.test.testbase.BaseClass;
+
+
 import com.test.pages.AddEmployeePageElements;
 import com.test.pages.DashboardPageElements;
+import com.test.pages.EmployeeListPageElements;
 import com.test.pages.LoginPageElements;
 import com.test.pages.PersonalDetailsPageElements;
+
 
 public class PageInitializer extends BaseClass {
 
@@ -13,6 +19,7 @@ public class PageInitializer extends BaseClass {
 	public static DashboardPageElements dashboardPage;
 	public static AddEmployeePageElements addEmployeePage;
 	public static PersonalDetailsPageElements personalDetailsPage;
+	public static EmployeeListPageElements employeeListPage;
 	
 	
 	public static void initialize()
@@ -21,6 +28,7 @@ public class PageInitializer extends BaseClass {
 		dashboardPage = new DashboardPageElements();
 		addEmployeePage = new AddEmployeePageElements();
 		personalDetailsPage = new PersonalDetailsPageElements();
+		employeeListPage = new EmployeeListPageElements();
 	}
 
 }

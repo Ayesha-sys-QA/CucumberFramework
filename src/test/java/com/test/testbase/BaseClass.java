@@ -1,16 +1,16 @@
-package com.neotech.testbase;
-
+package com.test.testbase;
 
 import java.time.Duration;
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import com.neotech.utils.ConfigsReader;
-import com.neotech.utils.Constants;
-import com.test.pages.PageInitializer;
+import com.test.testbase.PageInitializer;
+import com.test.utils.ConfigsReader;
+import com.test.utils.Constants;
 
 public class BaseClass {
 

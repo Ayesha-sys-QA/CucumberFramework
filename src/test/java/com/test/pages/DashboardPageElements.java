@@ -1,10 +1,11 @@
 package com.test.pages;
 
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.neotech.testbase.BaseClass;
+import com.test.testbase.BaseClass;
 
 public class DashboardPageElements {
 
@@ -17,6 +18,9 @@ public class DashboardPageElements {
 	@FindBy(linkText = "Add Employee")
 	public WebElement addEmployeeLink;
 	
+	@FindBy(id = "menu_pim_viewEmployeeList")
+	public WebElement employeeListLink;
+
 	public DashboardPageElements()
 	{
 		PageFactory.initElements(BaseClass.driver, this);

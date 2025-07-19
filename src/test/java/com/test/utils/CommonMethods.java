@@ -1,6 +1,9 @@
-package com.neotech.utils;
+package com.test.utils;
 
 import java.io.File;
+
+
+
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -19,9 +22,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.io.Files;
-import com.neotech.testbase.BaseClass;
+import com.test.testbase.BaseClass;
+import com.test.testbase.PageInitializer;
 
-public class CommonMethods extends BaseClass {
+public class CommonMethods extends PageInitializer {
 
 	/**
 	 * This method clears the text of a web element and sends the text parameter to
@@ -362,6 +366,11 @@ public class CommonMethods extends BaseClass {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss");
 
 		return sdf.format(date);
+	}
+	
+	public void waitForLoaderToDisappear() {
+	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("preloader")));
 	}
 
 }
