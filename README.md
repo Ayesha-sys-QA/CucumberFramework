@@ -17,11 +17,11 @@ mvn clean test
 
 ---
 
-## 📈 Test Report
+📊 Cucumber HTML Report
+✔️ After execution, open this file in a browser to view results:
+target/cucumber-html-reports/overview-features.html
 
-After test execution, an HTML report is generated at:  
-`target/cucumber-html-reports/overview-features.html`
-
+🖼️ Screenshots for each scenario are automatically attached in the report.
 ---
 ## 📊 Test Execution Report
 
@@ -46,21 +46,19 @@ The test suite was executed using Maven and Cucumber. The HTML report includes s
 
 ## 📁 Project Structure
 
-```
 CucumberFramework/
-├── src/
-│   ├── main/
-│   └── test/
-│       ├── java/
-│       │   ├── stepDefinitions/
-│       │   ├── runners/
-│       │   ├── pages/
-│       │   └── utilities/
-│       └── resources/
-│           └── features/
-├── pom.xml
-├── README.md
-```
+├── src
+│   └── test
+│       ├── java
+│       │   ├── com.test.pages
+│       │   ├── com.test.steps
+│       │   └── com.test.runners
+│       └── resources
+│           └── features
+├── target/
+│   ├── cucumber.json
+│   └── cucumber-html-reports/
+└── pom.xml
 
 ---
 
