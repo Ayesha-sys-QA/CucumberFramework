@@ -1,80 +1,41 @@
-# 🔪 Cucumber Automation Framework
+# 🧪 Cucumber Framework – Automation Project
 
-A Behavior-Driven Development (BDD) test automation framework using **Java**, **Cucumber**, **TestNG**, and **Maven**.
-
----
+This project is a basic Java Selenium Cucumber framework using TestNG and Maven. It automates scenarios based on feature files and step definitions.
 
 ## 🚀 How to Run Tests
 
-### ✅ Option 1: From Eclipse
-- Right-click on `TestRunner.java`  
-- Select `Run As` → `Maven test`
+Use the following Maven command:
+mvn test
 
-### ✅ Option 2: From Terminal
-```bash
-mvn clean test
-```
 
----
+You can also right-click the runner class (`RegressionRunner.java`) and select **Run As → TestNG Test**.
 
-📊 Cucumber HTML Report
+## 🗂️ Project Structure
 
-✔️ After execution, open this file in a browser to view results:
+📁 src
+┣ 📂 test
+┃ ┣ 📂 java
+┃ ┃ ┣ 📂 com.neotech.steps # Step Definitions
+┃ ┃ ┣ 📂 com.test.runners # Runner classes
+┃ ┃ ┗ 📂 com.neotech.utils # Utilities (Excel, Config, etc.)
+┃ ┗ 📂 resources
+┃ ┗ 📂 features # Cucumber Feature files
+
+
+
+## 🧾 Reports
+
+After test execution, an HTML report is generated at:
 target/cucumber-html-reports/overview-features.html
 
-🖼️ Screenshots for each scenario are automatically attached in the report.
----
-## 📊 Test Execution Report
+You can also check the JSON report:
+target/cucumber.json
 
-The test suite was executed using Maven and Cucumber. The HTML report includes scenario status, steps, and screenshots.
+## 📸 Screenshots
 
-📁 Report Location: `target/cucumber-html-reports/overview-features.html`
+Screenshots on failure are saved automatically in:
+target/screenshots/
 
-🔗 [View Report in Repository](https://github.com/Ayesha-sys-QA/CucumberFramework/blob/main/target/cucumber-html-reports/overview-features.html)
 
-🖼️ Screenshots are embedded in the report for failed scenarios.
-
-## 🧩 Test Coverage
-
-### ✅ Login Functionality  
-- Valid and invalid credential handling
-
-### ✅ Add Employee With Personal Details  
-- Personal info form validation  
-- Data-driven testing (Excel utility integration)
-
----
-
-## 📁 Project Structure
-
-CucumberFramework/
-├── src
-│   └── test
-│       ├── java
-│       │   ├── com.test.pages
-│       │   ├── com.test.steps
-│       │   └── com.test.runners
-│       └── resources
-│           └── features
-├── target/
-│   ├── cucumber.json
-│   └── cucumber-html-reports/
-└── pom.xml
-
----
-
-## 🛠 Tech Stack
-- Java  
-- Maven  
-- Cucumber  
-- TestNG  
-- Selenium WebDriver  
-- Masterthought HTML Reports
-
----
-
-## 🙋‍♀️ Author
-
-**Aicha Moustatia**  
-QA Automation Engineer | [GitHub](https://github.com/Ayesha-sys-QA)
+> ✅ Maintained by [Ayesha-sys-QA](https://github.com/Ayesha-sys-QA)
 
