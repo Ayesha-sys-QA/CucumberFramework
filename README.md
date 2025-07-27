@@ -12,7 +12,6 @@ This is a Java-based test automation framework using **Cucumber**, **Selenium We
 - Clear separation of pages, steps, runners, and utilities
 
 ## 📂 Project Structure
-
 src
 ├── main
 │ └── java
@@ -27,20 +26,11 @@ src
 │ ├── Dashboard.feature
 │ └── GoogleSearch.feature
 
-## 🛠 Technologies Used
-
-- Java
-- Selenium WebDriver
-- Cucumber BDD
-- Maven
-- Git & GitHub
-- Eclipse IDE
-
-
 ## 🧪 How to Run Tests
 
 ### From Eclipse:
 > Right-click `TestRunner.java` → `Run As` → `Maven test`
+
 ### From terminal:
 ```bash
 mvn clean test
