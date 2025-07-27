@@ -18,6 +18,7 @@ mvn clean test
 ---
 
 📊 Cucumber HTML Report
+
 ✔️ After execution, open this file in a browser to view results:
 target/cucumber-html-reports/overview-features.html
 
