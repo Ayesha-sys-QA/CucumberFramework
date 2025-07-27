@@ -38,34 +38,32 @@ src
 ---
 
 ## ▶️ How to Run Tests
+✅ Option 1: Run from Eclipse
+Right-click TestRunner.java → Run As → Maven Test
 
-### ✅ Option 1: Run from Eclipse
-Right-click `TestRunner.java` → **Run As** → **Maven test**
-
-### ✅ Option 2: Run from Terminal
-```bash
+✅ Option 2: Run from Terminal
 mvn clean test
+
 📊 Reporting
 After execution, reports are available:
 
 Local HTML report:
 target/cucumber-html-reports/overview-features.html
-✅ Executed Scenarios
+
+Executed Scenarios:
+
 Validate the main menu items on the dashboard
 
 Google search with the keyword "Cucumber testing"
 
-Each scenario includes:
+🔍 Scenario Execution Includes:
+📸 Screenshot on execution
 
-* Screenshot on execution
+📝 Console logs
 
-* Console logs
-
-* HTML reports
+🧾 HTML reports
 
 👩‍💻 Author
 Aicha Moustatia
 QA Automation Engineer
 📍 GitHub Profile
-
-
