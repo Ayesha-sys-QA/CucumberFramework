@@ -1,49 +1,78 @@
-🧪 **Cucumber Framework – Automation Project**  
-This project is a basic Java Selenium Cucumber framework using TestNG and Maven. It automates scenarios based on feature files and step definitions.
+# 🧪 Cucumber Framework – Automation Project
+
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/Ayesha-sys-QA/CucumberFramework)
+[![Java](https://img.shields.io/badge/Java-11-blue)](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+[![TestNG](https://img.shields.io/badge/TestNG-enabled-orange)](https://testng.org/)
+
+This is a Java Selenium Cucumber framework using TestNG and Maven. It automates scenarios defined in Gherkin syntax and uses step definitions for test execution.
 
 ---
 
-🚀 **How to Run Tests**
+## 🧰 Prerequisites
 
-- Run from Terminal:  
-  ```
-  mvn test
-  ```
-- Or right-click the runner class `RegressionRunner.java` and select:  
-  `Run As → TestNG Test`
+- Java 11+
+- Maven
+- Eclipse or IntelliJ
+- ChromeDriver
 
 ---
 
-📂 **Project Structure**
+## 🚀 How to Run Tests
+
+Run tests from terminal:
+
+```bash
+mvn test
+```
+
+Or right-click `RegressionRunner.java` → Run As → TestNG Test
+
+---
+
+## 📂 Project Structure
 
 ```
 src
 └── test
-    └── java
-        ├── com.neotech.steps        # Step Definitions
-        ├── com.test.runners         # Runner Classes
-        └── com.neotech.utils        # Utilities (Excel, Config, etc.)
+    ├── java
+    │   ├── com.neotech.steps        # Step Definitions
+    │   ├── com.test.runners         # Runner Classes
+    │   └── com.neotech.utils        # Utilities (Excel, Config, etc.)
     └── resources
         └── features                 # Cucumber Feature Files
 ```
 
 ---
 
-🧾 **Reports**
+## 🧾 Reports
 
-- After test execution, an HTML report is generated at:  
-  `target/cucumber-html-reports/overview-features.html`
+After execution, view:
 
-- You can also check the JSON report at:  
-  `target/cucumber.json`
-
----
-
-📸 **Screenshots**
-
-- Screenshots on failure are saved automatically in:  
-  `target/screenshots/`
+- HTML report: `target/cucumber-html-reports/overview-features.html`
+- JSON report: `target/cucumber.json`
 
 ---
 
-✅ *Maintained by [Ayesha-sys-QA](https://github.com/Ayesha-sys-QA)*
+## 📸 Screenshots
+
+On failure, screenshots are saved in: `target/screenshots/`
+
+---
+
+## 💡 Sample Feature (Login)
+
+```gherkin
+Feature: Login Functionality
+
+  Scenario: Valid login
+    Given I open the login page
+    When I enter valid credentials
+    Then I should see the welcome message
+```
+
+---
+
+## ✅ Maintained by
+
+**Ayesha-sys-QA**  
+[GitHub Profile](https://github.com/Ayesha-sys-QA)
