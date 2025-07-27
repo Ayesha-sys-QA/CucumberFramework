@@ -26,14 +26,6 @@ src
 │ ├── Dashboard.feature
 │ └── GoogleSearch.feature
 
-## 🧪 How to Run Tests
-
-### From Eclipse:
-> Right-click `TestRunner.java` → `Run As` → `Maven test`
-
-### From terminal:
-```bash
-mvn clean test
 
 📊 Cucumber HTML Report
 Generated automatically at:
