@@ -1,4 +1,4 @@
-# 🥒 CucumberFramework
+# CucumberFramework
 
 This project is a Java-based test automation framework that uses **Cucumber**, **Selenium WebDriver**, **TestNG**, and **Maven**. It follows the **Page Object Model (POM)** and leverages **BDD** with Gherkin syntax to describe test cases in a readable and maintainable way.
 
