@@ -1,4 +1,4 @@
-# 🥒 CucumberFramework
+# CucumberFramework
 
 This is a Java-based test automation framework using **Cucumber**, **Selenium WebDriver**, **TestNG**, and **Maven**. It follows the Page Object Model (POM) and uses BDD with Gherkin syntax for easy-to-read test scenarios.
 
@@ -46,6 +46,7 @@ src
 ```bash
 mvn clean test
 
+
 📊 Cucumber HTML Report
 Generated automatically at:
 target/cucumber-html-reports/overview-features.html
@@ -59,3 +60,4 @@ target/cucumber-html-reports/overview-features.html
 Aicha Moustatia
 🧪 QA Engineer | Automation | Selenium | Cucumber | Java
 🔗 GitHub – Ayesha-sys-QA
+
