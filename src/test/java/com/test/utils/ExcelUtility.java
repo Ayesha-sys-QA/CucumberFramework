@@ -3,6 +3,10 @@ package com.test.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -71,53 +75,46 @@ public class ExcelUtility {
 	 */
 	private static String cellData(int rowIndex, int colIndex)
 	{
-	   
-	    return sheet.getRow(rowIndex).getCell(colIndex).toString();
+		return sheet.getRow(rowIndex).getCell(colIndex).toString();
 	}
 	
 	
-	public static Object[][] excelIntoArray(String filePath, String sheetName)
+	public static List<Map<String, String>> excelIntoListOfMaps(String filePath, String sheetName)
 	{
 		//open the file: filePath
 		openExcel(filePath);
 		
-		
 		//load the sheet: sheetName
 		loadSheet(sheetName);
 		
-		
 		//get the number of rows 
 		int rowNumber = rowCount();
-
 		
 		//get the number of cols 
 		int colNumber = colCount(0);
 		
-	
-		
 		//fill out the array by using a nested for loop to go through all the elements....
 		
-		
-		Object[][] data = new Object[rowNumber - 1][colNumber]; //I dont need to get the header
+		List<Map<String, String>> list = new ArrayList<>();
 		
 		for(int row = 1; row < rowNumber; row++)
 		{
+			// create a map for each row
+			Map<String, String> map = new LinkedHashMap<>();
 			for (int col = 0; col < colNumber; col ++)
 			{
-
-				//on the first run: 
-				//row = 1, col = 0 --> but I need to fill the cell 0, 0 on data: data[row-1][col]
-				data[row-1][col] = cellData(row, col);
+				String key = cellData(0, col); // first row is the header
+				String value = cellData(row, col);
+				map.put(key, value);
 			}
 			
+			// add the map to the list
+			list.add(map);
 		}
 		
+		return list;
 		
-		return data;
-		}
 	}
 	
 
-
-
-
+}

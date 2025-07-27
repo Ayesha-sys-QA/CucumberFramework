@@ -1,8 +1,5 @@
 package com.test.steps;
 
-import com.test.pages.DashboardPageElements;
-import com.test.pages.EmployeeListPageElements;
-import com.test.pages.LoginPageElements;
 import com.test.utils.CommonMethods;
 
 import io.cucumber.java.en.Given;
@@ -10,8 +7,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SearchEmployeeSteps extends CommonMethods {
-	
-	
+
+	@Given("The user is logged in with valid credentials")
+	public void the_user_is_logged_in_with_valid_credentials() {
+		loginPage.adminLogin();
+	}
+
 	@Given("The user navigates to the Employee List page")
 	public void the_user_navigates_to_the_employee_list_page() {
 		click(dashboardPage.PIM);

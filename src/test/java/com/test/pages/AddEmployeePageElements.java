@@ -1,7 +1,6 @@
 package com.test.pages;
 
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -35,6 +34,9 @@ public class AddEmployeePageElements {
 	
 	@FindBy(id = "modal-save-button")
 	public WebElement saveBtn;
+	
+	@FindBy (id="middle-name-box")
+	public WebElement middleName;
 	
 	
 	public AddEmployeePageElements()

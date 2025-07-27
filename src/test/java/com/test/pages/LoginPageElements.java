@@ -1,6 +1,5 @@
 package com.test.pages;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -20,13 +19,15 @@ public class LoginPageElements extends CommonMethods {
 	@FindBy(xpath="//button")
 	public WebElement loginBtn;
 	
+	@FindBy(id="txtPassword-error")
+	public WebElement passwordError;
 	
 	
-	@FindBy(css = "div.toast-message")
+	@FindBy(css="div.toast-message")
 	public WebElement invalidPassword;
 	
-	@FindBy(id = "txtPassword-error")
-	public WebElement passwordEmptyError;
+	
+	
 	
 	public LoginPageElements()
 	{

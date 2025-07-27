@@ -341,7 +341,7 @@ public class CommonMethods extends PageInitializer {
 	 * 
 	 * @param fileName
 	 */
-	public static String takeScreenshot(String fileName)
+	/*public static String takeScreenshot(String fileName)
 	{
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		
@@ -356,6 +356,30 @@ public class CommonMethods extends PageInitializer {
 		}
 
 		return destination;
+	}
+	
+	/**
+	 * This method will take a screenshot saves it in the screenshots folder with the given fileName. 
+	 * 
+	 * @param fileName
+	 */
+	public static byte[] takeScreenshot(String fileName)
+	{
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		
+		// saving the screenshot in a file IS NOT NEEDED anymore
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		
+		String destination = Constants.SCREENSHOT_FILEPATH + fileName + getTimeStamp() + ".png";
+
+		try {
+			Files.copy(source, new File(destination));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		byte[] image = ts.getScreenshotAs(OutputType.BYTES);
+		return image;
 	}
 	
 	
@@ -373,4 +397,20 @@ public class CommonMethods extends PageInitializer {
 	    wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("preloader")));
 	}
 
+
+
+/**
+ * This method clicks on the element in the list that matches the value
+ * 
+ * @param list
+ * @param value
+ */
+public static void clickOnElement(List<WebElement> list, String value) {
+	for (WebElement option : list) {
+		if (option.getText().equalsIgnoreCase(value)) {
+			option.click();
+			break;
+		}
+	}
+}
 }
