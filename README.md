@@ -1,17 +1,24 @@
-# CucumberFramework
+# 🥒 CucumberFramework
 
-This is a Java-based test automation framework using **Cucumber**, **Selenium WebDriver**, **TestNG**, and **Maven**. It follows the Page Object Model (POM) and uses BDD with Gherkin syntax for easy-to-read test scenarios.
+This project is a Java-based test automation framework that uses **Cucumber**, **Selenium WebDriver**, **TestNG**, and **Maven**. It follows the **Page Object Model (POM)** and leverages **BDD** with Gherkin syntax to describe test cases in a readable and maintainable way.
 
-## 🚀 Features
+---
 
-- BDD testing with Cucumber and Gherkin
-- Web automation using Selenium WebDriver
-- Test execution with Maven
-- Integrated HTML reports (via net.masterthought plugin)
-- Screenshot capture for failed steps
-- Clear separation of pages, steps, runners, and utilities
+## 🔧 Technologies Used
 
-## 📂 Project Structure
+- Java
+- Selenium WebDriver
+- Cucumber (BDD with Gherkin)
+- TestNG
+- Maven
+- JUnit (runner integration)
+- Cucumber Reporting (via `net.masterthought` plugin)
+
+---
+
+## 📁 Project Structure
+
+
 src
 ├── main
 │ └── java
@@ -27,19 +34,38 @@ src
 │ └── GoogleSearch.feature
 
 
-📊 Cucumber HTML Report
-Generated automatically at:
+
+---
+
+## ▶️ How to Run Tests
+
+### ✅ Option 1: Run from Eclipse
+Right-click `TestRunner.java` → **Run As** → **Maven test**
+
+### ✅ Option 2: Run from Terminal
+```bash
+mvn clean test
+📊 Reporting
+After execution, reports are available:
+
+Local HTML report:
 target/cucumber-html-reports/overview-features.html
+✅ Executed Scenarios
+Validate the main menu items on the dashboard
 
-📸 Sample Executed Scenarios
-✅ Validate Dashboard Menu Items
+Google search with the keyword "Cucumber testing"
 
-✅ Google Search test with "Cucumber testing" keyword
+Each scenario includes:
+
+* Screenshot on execution
+
+* Console logs
+
+* HTML reports
 
 👩‍💻 Author
 Aicha Moustatia
-🧪 QA Engineer | Automation | Selenium | Cucumber | Java
-🔗 GitHub – Ayesha-sys-QA
-
+QA Automation Engineer
+📍 GitHub Profile
 
 
