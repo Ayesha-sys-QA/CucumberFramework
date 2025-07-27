@@ -10,16 +10,18 @@ mvn test
 
 You can also right-click the runner class (`RegressionRunner.java`) and select **Run As → TestNG Test**.
 
-## 🗂️ Project Structure
+## 📂 Project Structure
 
-📁 src
-┣ 📂 test
-┃ ┣ 📂 java
-┃ ┃ ┣ 📂 com.neotech.steps # Step Definitions
-┃ ┃ ┣ 📂 com.test.runners # Runner classes
-┃ ┃ ┗ 📂 com.neotech.utils # Utilities (Excel, Config, etc.)
-┃ ┗ 📂 resources
-┃ ┗ 📂 features # Cucumber Feature files
+```
+src
+└── test
+    └── java
+        ├── com.neotech.steps        # Step Definitions
+        ├── com.test.runners         # Runner Classes
+        └── com.neotech.utils        # Utilities (Excel, Config, etc.)
+    └── resources
+        └── features                 # Cucumber Feature Files
+```
 
 
 
