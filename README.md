@@ -22,13 +22,16 @@ mvn clean test
 After test execution, an HTML report is generated at:  
 `target/cucumber-html-reports/overview-features.html`
 
-### 📌 Report Includes:
-- ✅ Passed / ❌ Failed Scenarios  
-- 🔍 Step-by-step execution logs  
-- 📸 Screenshots on failure  
-- ⏱ Execution time per scenario
-
 ---
+## 📊 Test Execution Report
+
+The test suite was executed using Maven and Cucumber. The HTML report includes scenario status, steps, and screenshots.
+
+📁 Report Location: `target/cucumber-html-reports/overview-features.html`
+
+🔗 [View Report in Repository](https://github.com/Ayesha-sys-QA/CucumberFramework/blob/main/target/cucumber-html-reports/overview-features.html)
+
+🖼️ Screenshots are embedded in the report for failed scenarios.
 
 ## 🧩 Test Coverage
 
