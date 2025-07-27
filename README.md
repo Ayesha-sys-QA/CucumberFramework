@@ -41,9 +41,23 @@ src
 
 ### From Eclipse:
 > Right-click `TestRunner.java` → `Run As` → `Maven test`
-
 ### From terminal:
 ```bash
 mvn clean test
+
+📊 Cucumber HTML Report
+Generated automatically at:
+target/cucumber-html-reports/overview-features.html
+
+📸 Sample Executed Scenarios
+✅ Validate Dashboard Menu Items
+
+✅ Google Search test with "Cucumber testing" keyword
+
+👩‍💻 Author
+Aicha Moustatia
+🧪 QA Engineer | Automation | Selenium | Cucumber | Java
+🔗 GitHub – Ayesha-sys-QA
+
 
 
