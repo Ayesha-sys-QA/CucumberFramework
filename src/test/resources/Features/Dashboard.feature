@@ -10,6 +10,6 @@ Feature: Dashboard Menu
 			|Discipline|
 			|Reports Catalog|
 			|More|
-			|Maintenance|
+			|Maintenance&|
 	
 	
